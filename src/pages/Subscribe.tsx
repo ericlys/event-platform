@@ -2,9 +2,10 @@ import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
+import { Footer } from "../components/Footer";
 
 import ProjectImg from "../assets/code-mockup.png";
-import { Footer } from "../components/Footer";
+import ReactIcon from "../assets/react-icon.png";
 
 
 export function Subscribe() {
@@ -30,6 +31,7 @@ export function Subscribe() {
 
   return(
     <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
+      <img src={ReactIcon} alt="" className="absolute z-[-1]"/>
       <div  className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
         <div className="max-w-[640px]">
           <Logo />
