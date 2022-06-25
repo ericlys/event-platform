@@ -4,6 +4,7 @@ import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
 import ProjectImg from "../assets/code-mockup.png";
+import { Footer } from "../components/Footer";
 
 
 export function Subscribe() {
@@ -69,6 +70,7 @@ export function Subscribe() {
         </div>
       </div>
       <img src={ProjectImg} className="mt-10" alt="" />
+      <Footer/>
     </div>
   )
 }
