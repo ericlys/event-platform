@@ -22,7 +22,7 @@ export function Event() {
     <div className="flex flex-col min-h-screen">
       <Header modalState={modalState} openModal={handleOpenModal} closeModal={handleCloseModal}/>
       <main className="flex flex-1">
-        { slug ? 
+        { slug && !modalState ?
           <Video lessonSlug={slug}/> 
            : 
           <div className="flex-1"
