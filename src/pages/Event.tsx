@@ -9,17 +9,13 @@ export function Event() {
   const { slug } = useParams<{slug: string}>()
   const [modalState, setModalState] = useState(false);
 
-  console.log(slug)
-
   function handleOpenModal() {
     setModalState(true);
-    console.log(modalState)
 
   }
 
   function handleCloseModal() {
     setModalState(false);
-    console.log(modalState)
   }
 
   return (
@@ -32,7 +28,7 @@ export function Event() {
           <div className="flex-1"
         />}
         <div className={classNames("md:flex", {
-          "absolute z-10 flex h-full w-full": modalState,
+          "absolute z-10 flex w-full": modalState,
           "hidden": !modalState,
         })}>
           <Sidebar  closeModal={handleCloseModal}/> 
