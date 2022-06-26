@@ -1,18 +1,20 @@
 # Event-platform
 -[Deploy](https://event-platform-gamma.vercel.app/)
 
-Event Platform is an application where the user can register in a class to participate in an event, with practical and live classes, taught by teachers.
-
 <p align="center">
   <img alt="event platform gif" src=".github/event-platform.gif" />
 </p>
 
+Event Platform is an application where the user can register in a class to participate in an event, with practical and live classes, taught by teachers.
+
 ## Tech Stack
 
-- [React Native](https://reactnative.dev/)
+- [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org)
-- [Expo](https://expo.io/)
-- [Styled Components](https://styled-components.com/)
+- [Graphcms](https://graphcms.com/)
+- [GraphQL](https://graphql.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Apollographql](https://www.apollographql.com/)
 
 ## Installation
 
