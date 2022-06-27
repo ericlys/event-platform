@@ -31,12 +31,18 @@ export function Lesson({
   const isActiveLesson = currentSlug === slug;
   
   function handleNavigateToVideo() {
-    closeSideba();
-    navigate(`/event/lesson/${slug}`);
+    if(isLessonAvailable){
+      closeSideba();
+      navigate(`/event/lesson/${slug}`);
+    }
   }
 
   return (
-    <div className='cursor-pointer' onClick={handleNavigateToVideo}>
+    <div className={classNames('cursor-pointer', {
+      'cursor-default': !isLessonAvailable
+    })} 
+    onClick={handleNavigateToVideo}
+    >
       <span className="text-gray-300">
         {availableDateFormatted}
       </span>
